@@ -2,10 +2,7 @@
 layout: post
 title: Photoemission Tutorial
 ---
-# OptaDOS Photoemission Tutorial (Cu(100), CASTEP 23)
-
-> Status: Complete draft based on OptaDOS User Guide and clarifications.  
-> Target audience: Surface‑science / photocathode researchers who know how to run basic CASTEP jobs, but not yet the photoemission module.
+# OptaDOS Photoemission Tutorial (Cu(100), CASTEP 23
 
 ---
 
