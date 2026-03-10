@@ -52,7 +52,7 @@ Answer: We can, but must check that the innermost layer PDOS matches bulk Cu rea
 
 Python context: we will use `pymatgen` to start from bulk fcc Cu and build a (100) slab.
 
-- We assume to start from **bulk fcc Cu** with lattice parameter $a \approx 3.615 \mathrm{\overset{\circ}{A}}$ (adjust to preferred value or relaxed DFT value).
+- We assume to start from **bulk fcc Cu** with lattice parameter $a \approx 3.615$ Å (adjust to preferred value or relaxed DFT value).
 - The **(100) surface normal** will be taken along **Cartesian z** so that `photo_slab_min` and `photo_slab_max` refer to the $z$‑direction in OptaDOS.
 - We want roughly **16 atomic layers** of Cu and about **30 Å of vacuum**.
 
@@ -100,7 +100,7 @@ The key steps are:
 1. Extract the **atomic $z$‑coordinates** from our final structure (`Cu-out.cell` or the CIF).
 2. Determine the **minimum** and **maximum** atomic $z$:  
    $z_{\min}^{\text{atoms}},\ z_{\max}^{\text{atoms}}.$
-3. Choose an **atomic radius** $r_{\mathrm{vdW}}$ for Cu (a simple working value is $1.4\ \mathrm{\overset{\circ}{A}}$).
+3. Choose an **atomic radius** $r_{\mathrm{vdW}}$ for Cu (a simple working value is $1.4$ Å).
 4. Define the slab limits as:
    - `photo_slab_min`:
      $z_{\min}^{\text{slab}} = z_{\min}^{\text{atoms}} - r_{\mathrm{vdW}}$
