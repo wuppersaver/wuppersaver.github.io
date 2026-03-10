@@ -8,23 +8,17 @@ title: Photoemission Tutorial
 
 ## 0. Overview
 
-This tutorial walks through the photoemission module of OptaDOS using a Cu(100) slab as the main example, with optional extensions. It is structured in layers:
+This tutorial walks through the photoemission module of OptaDOS using a Cu(100) slab as the main example, with optional extensions.
 
-1. Main Cu(100) tutorial  
+For more information and CASTEP tutorials go to the documentation website [here](https://castep-docs.github.io/castep-docs/).
+
+It is structured in sections:  
    - Build and converge a Cu(100) slab with pymatgen.  
    - Run a CASTEP 23 spectral task that writes all files needed for OptaDOS photoemission.  
    - Run a single‑energy 3‑step photoemission calculation in OptaDOS (`task : photoemission`).  
    - Generalise to a photon energy sweep (`task : photo_energy_sweep`).  
    - Run a 1‑step model for the same system.  
    - Produce a binding‑energy curve (EDC) for comparison to ARPES‑style data.
-
-2. Optional / advanced tutorials  
-   - Layer definition with `photo_layers_tops`.  
-   - Automatic slab z‑limit helper (computing `photo_slab_min` / `photo_slab_max`).  
-   - MgO(6 layers) / Ag(16 layers) interface and layer‑dependent IMFPs.  
-   - ARPES‑style maps (`ekin_ptrans_map`, `const_bindenergy_p_map`).  
-   - Field emission and Schottky barrier lowering.  
-   - DS‑like emission model.
 
 Throughout, we will:
 
